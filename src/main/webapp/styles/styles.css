@@ -1,0 +1,170 @@
+@font-face{
+    font-family: "Varche Caps";
+    src: local("Varche Caps"), url("../resources/fonts/varche-caps.ttf");
+}
+
+@font-face{
+    font-family: "Yonky Black";
+    src: local("Yonky Black"), url("../resources/fonts/Yonky-Black-demoFFP.ttf");
+}
+
+.open-sans{
+  font-family: "Open Sans", sans-serif
+}
+
+:root{
+    --color-orange: #ec6324;
+    --color-pink: #f6c0c8;
+    --color-blue: #5cb8b0;
+    --color-green: #dadd5e;
+    --color-black: #2a1e11;
+    --font-varche: varche-caps;
+}
+
+.bg-orange{
+    background-color: var(--color-orange);    
+}
+
+.bg-pink{
+    background-color: var(--color-pink);
+}
+
+.bg-blue{
+    background-color: var(--color-blue);
+}
+
+.bg-green{
+    background-color: var(--color-green);
+}
+
+.border-orange{
+    border-color: var(--color-orange) !important;
+}
+
+.border-pink{
+    border-color: var(--color-pink) !important;
+}
+
+.text-black{
+    color: var(--color-black);
+}
+
+.text-blue{
+    color: var(--color-blue);
+}
+
+.text-orange{
+    color: var(--color-orange);
+}
+
+.text-black-90{
+    color: var(--color-black);
+    opacity: 90%;
+}
+
+.logo{
+    width: 60%;
+}
+
+.text-varche{
+    font-family: "Varche Caps";
+}
+
+.text-yonky{
+    font-family: "Yonky Black";
+}
+
+.text-pink{
+    color: var(--color-pink);
+}
+.gif{
+    background-image: url('../resources/img/video.gif');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding:0;
+    margin:0;
+}
+
+.bg-1{
+    background-image: url('../resources/img/background-blue-hd.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding:0;
+    margin:0;
+}
+
+.foto{
+    max-width: 25vh;
+}
+
+.btnMenu{
+    color: var(--color-green);
+    height: 150px;
+    width: 150px;
+}
+
+.btnMenu > a{
+    font-family: var(--font-varche);
+    color: var(--color-green);
+    text-decoration: none;
+}
+
+.btnLogin:hover {
+    background-color: #ee7158;
+    color: #f2f2ff;
+}
+
+.btn-send {
+    background-color: var(--color-orange) !important;
+    border-radius: 100% !important;
+    width: 6vw;
+    height: 7vh;
+}
+
+.btn-send:hover {
+    background-color: var(--color-orange) !important;
+}
+
+.icon-color {
+    color: #f6c0c8;
+}
+
+#infos{
+    max-width:40%;
+    max-height: 120px;
+}
+
+#botoes{
+    max-width: 7%;
+}
+
+.pet{
+    max-width: 50%;
+}
+
+#inferior{
+    margin-top: 80px;
+}
+
+#anotacoes{
+    width: 80% !important;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+#historico{
+    max-height: 300px;
+}
+
+.table{
+    max-height: 200px;
+}
+
+tfoot{
+    text-align: center;
+}
