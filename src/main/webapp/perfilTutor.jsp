@@ -26,8 +26,8 @@
             </div>
     
             <div id="botoes" class="d-flex flex-column gap-2">
-                <a href=""><img src="./resources/img/btn-agendamento.png" alt="Novo Agendamento" class="img-fluid"></a>
-                <a href=""><img src="./resources/img/btn-addPet.png" alt="Novo Pet" class="img-fluid"></a>
+                <a href="/CP_05/AgendamentoServlet"><img src="./resources/img/btn-agendamento.png" alt="Novo Agendamento" class="img-fluid"></a>
+                <a href="/CP_05/CadastroPetServlet"><img src="./resources/img/btn-addPet.png" alt="Novo Pet" class="img-fluid"></a>
             </div>
         </div>
         <div id="inferior" class="w-100 d-flex flex-column justify-content-center align-items-center">

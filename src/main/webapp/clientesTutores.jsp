@@ -25,7 +25,7 @@
             </div>
             <div class="col row justify-content-end m-0">
                 <div class="sup-dir w-50">
-                    <a href="/ProjetoPet/ListaPets"><img src="./resources/img/foto-pet-default-2.png" alt="Adicionar Pet"
+                    <a href="/CP_05/ListaPets"><img src="./resources/img/foto-pet-default-2.png" alt="Adicionar Pet"
                             class="img-fluid w-25"></a>
                     <a href="cadastroTutor.jsp"><img src="./resources/img/btn-user.png" alt="Adicionar Pet" class="img-fluid w-25"></a>
                 </div>
@@ -45,18 +45,16 @@
                         <th scope="col">Telefone</th>
                         <th scope="col">CPF</th>
                         <th scope="col"></th>
-                        <th scope="col"></th>
                       </tr>
                     </thead>
                     <tbody>
                     <c:forEach items="${tutores}" var="tutor">
 					<tr>
-                        <td>${tutor.nome}</td>
+                        <td><a href="/CP_05/PerfilTutorReal?id=${tutor.idTutor}">${tutor.nome}</a></td>
                         <td>${tutor.endereco}</td>
                         <td>${tutor.telefone}</td>
                         <td>${tutor.cpf}</td>
                         <td><a href="/CP_05/RemoverTutor?id=${tutor.idTutor}">Remover</a></td>
-                        <td><a href="/CP_05/EditarTutor?id=${tutor.idTutor}">Editar</a></td>
                       </tr>
                     </c:forEach>
                     </tbody>

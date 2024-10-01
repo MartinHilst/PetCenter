@@ -31,10 +31,10 @@
             </div>
             <div class="d-flex flex-column w-25 h-25 align-items-end">
                 <button class="btn border border-0 rounded-circle w-25">
-                    <img src="./resources/img/btn-agendamento.png" alt="Agendar serviço" class="img-fluid">
+                    <a href="/CP_05/AgendamentoServlet"><img src="./resources/img/btn-agendamento.png" alt="Agendar serviço" class="img-fluid"></a>
                 </button>
                 <button class="btn border border-0 rounded-circle w-25">
-                    <img src="./resources/img/btn-user.png" alt="Acessar perfil do tutor" class="img-fluid">
+                    <a href="/CP_05/ListaTutores"></a><img src="./resources/img/btn-user.png" alt="Acessar perfil do tutor" class="img-fluid">
                 </button>
             </div>
         </header>
@@ -45,7 +45,7 @@
                 <div class="card-body fs-6">
                     <ul>
                         <c:forEach items="${servicos}" var="servico">
-		                	<li>${servico.servico} - ${sevico.data} - <a href="/CP_05/RemoveServico?id=${servico.idServico}&idAnimal=${animal.idAnimal}">Remover</a></li>
+		                	<li>${servico.servico} - ${servico.data} - <a href="/CP_05/RemoveServico?id=${servico.idServico}&idAnimal=${animal.idAnimal}">Remover</a></li>
 		                </c:forEach>
                     </ul>
                 </div>

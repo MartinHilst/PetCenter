@@ -43,7 +43,6 @@
                         <th scope="col">Cor</th>
                         <th scope="col">Idade</th>
                         <th scope="col"></th>
-                        <th scope="col"></th>
                       </tr>
                     </thead>
                     <tbody>
@@ -54,7 +53,6 @@
                         <td>${animal.cor}</td>
                         <td>${animal.idade}</td>
                         <td><a href="/CP_05/RemoverPet?id=${animal.idAnimal}">Remover</a></td>
-                        <td><a href="/CP_05/EditarPet?id=${animal.idAnimal}">Editar</a></td>
                       </tr>
                     </c:forEach>
                     </tbody>

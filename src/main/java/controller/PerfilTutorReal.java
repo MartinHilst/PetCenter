@@ -9,34 +9,29 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import model.Animal;
 import model.Tutor;
 import repository.AnimalDAO;
-import repository.ServicoDAO;
 import repository.TutorDAO;
 
 
 
-@WebServlet("/PerfilPet")
-public class PerfilPet extends HttpServlet {
+@WebServlet("/PerfilTutorReal")
+public class PerfilTutorReal extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
 	protected void service(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		
-		AnimalDAO dao = new AnimalDAO();
 		TutorDAO tutorDAO = new TutorDAO();
-		ServicoDAO ServicoDAO = new ServicoDAO();
+		AnimalDAO dao = new AnimalDAO();
 		
-		int id = Integer.parseInt(request.getParameter("id"));
-		Animal animal=dao.selectById(id);
-		Tutor tutor = tutorDAO.selectById(animal.getIdTutor());
-		System.out.println(tutor.getNome());
-		
-		request.setAttribute("animal", animal);
-		request.setAttribute("servicos", ServicoDAO.selectByIdAnimal(id));
+
+		int id= Integer.parseInt(request.getParameter("id"));
+
+		Tutor tutor = tutorDAO.selectById(id);
 		request.setAttribute("tutor", tutor);
-		RequestDispatcher rd = request.getRequestDispatcher("/perfilPet.jsp");
+		request.setAttribute("animais", dao.selectByTutorId(tutor.getIdTutor()));
+		RequestDispatcher rd = request.getRequestDispatcher("/perfilTutor.jsp");
 		rd.forward(request, response);
 
 	}
